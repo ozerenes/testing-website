@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGLAND</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <section id="header">
+        <div class="header-container">
+            <div class="nav-bar">
+                <div class="nav-name"><a href="./index.html" >ABROAD</a></div>
+            </div>
+        </div>
+        <div class="video1">
+            <a href="./blog.html">İş</a>
+        </div>
+        <div class="video2">
+            <a href="./blog.html">Eğitim</a>
+        </div>
+        <div class="video3">
+            <a href="./blog.html">Seyehat</a>
+        </div>
+        </div>
+    </section>
+    <section id="inbody">
+        <div class="main">
+            <div class="container-video">
+                <div class="box box1">
+                    <video src="./video/work1.mp4" autoplay loop muted></video>
+                </div>
+                <div class="box box2">
+                    <video src="./video/studentu.mp4" autoplay loop muted></video>
+                </div>
+                <div class="box box3">
+                    <video src="./video/kumgünes.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+    </section>
+    <script>
+        let box = document.querySelectorAll('.box');
+        box.forEach(popup => popup.addEventListener('click', () =>{
+            popup.classList.toggle('active')
+        }));
+    </script>
+</body>
+</html>
